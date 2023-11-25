@@ -28,6 +28,9 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  flutter_multi_formatter: any
+  indexed: any
+  url_launcher: any
   lottie: any
   google_fonts: any
   http: any
@@ -79,8 +82,7 @@ flutter:
   fonts:
     - family: Gropled
       fonts:
-        - asset: assets/fonts/Gropled-Bold.otf
-          style: italic
+        - asset: assets/fonts/Gropled-Bold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

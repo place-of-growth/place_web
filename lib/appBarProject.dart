@@ -10,7 +10,7 @@ class AppBarProject extends StatefulWidget {
 }
 
 class _AppBarProjectState extends State<AppBarProject> {
-  var eventStyle = GoogleFonts.montserrat(fontWeight: FontWeight.w200, fontSize: 26, color: Colors.white);
+  var eventStyle = GoogleFonts.montserrat(fontWeight: FontWeight.w500, fontSize: 26, color: Colors.white);
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +20,13 @@ class _AppBarProjectState extends State<AppBarProject> {
         children: [
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.03,
+          ),
+          Text(
+            'На взлёт!',
+            style: eventStyle,
+          ),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.07,
           ),
           Text(
             'Афиша',
@@ -36,14 +43,7 @@ class _AppBarProjectState extends State<AppBarProject> {
             width: MediaQuery.of(context).size.width * 0.07,
           ),
           Text(
-            'Заказчику',
-            style: eventStyle,
-          ),
-          SizedBox(
-            width: MediaQuery.of(context).size.width * 0.07,
-          ),
-          Text(
-            'На взлёт!',
+            'Меры поддержки',
             style: eventStyle,
           ),
           Spacer(),
